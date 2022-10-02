@@ -5,6 +5,10 @@
 > Sí , una clase se puede extender dos o más interfaces.
 - [x] c) Todas las variables heredan java.lang.Object.
 > Toda clase en java Hereda de java.lang.Object 
-- d) Si la clase A se extiende por B, entonces B es una superclase de A.
-- e) Si la clase C implementa la interfaz D, entonces C es un subtipo de D.
-- f) La herencia múltiple es la propiedad de una clase de tener múltiples superclases directas.
+- [x] d) Si la clase A se extiende por B, entonces B es una superclase de A.
+> Si B es el padre y A es el hijo ( es decir A extends B ) , entonces B es superclase y A subclase.
+- [x] e) Si la clase C implementa la interfaz D, entonces C es un subtipo de D.
+> Si , si la clase C implemente la interfaz D , se convierte en un subtipo de D.
+- [x] f) La herencia múltiple es la propiedad de una clase de tener múltiples superclases directas.
+> Cuando una clase tiene más de una superclase directa, cumple la propiedad de la herencia múltiple.
+
