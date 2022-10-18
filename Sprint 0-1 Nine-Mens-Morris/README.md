@@ -7,6 +7,6 @@ Grupo conformado por :
 - Calle Cuadros Sergei
 [Github](https://github.com/sergei270791) 
 ```
-qwerty
+
 ```
-<img src="https://i.imgur.com/CmXdR3C.png">
+
