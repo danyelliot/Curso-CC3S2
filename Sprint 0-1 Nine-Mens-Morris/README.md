@@ -15,4 +15,5 @@
 
 - [Informe Sprint #1](https://drive.google.com/file/d/1dWqEOdXp7wMpf0fCkcmsLubOtLIeaQcv/view?usp=sharing)
 
+- [Actas de Reunión](https://drive.google.com/drive/folders/14AS6iTd8XoHON5XCT-ap390itv7metpa?usp=sharing)
 
