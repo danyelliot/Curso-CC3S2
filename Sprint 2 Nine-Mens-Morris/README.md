@@ -1,4 +1,4 @@
-##  Sprint 0-1 Nine Mens Morris
+##  Sprint 2 Nine Mens Morris
 ### Integrantes 
 - Malvaceda Canales Carlos Daniel
 [Github](https://github.com/danyelliot)
@@ -9,11 +9,7 @@
 
 ### Enlaces
 
-- [Microcarta](https://drive.google.com/file/d/1fu90j32-LeZAnsA_rDzUZSBrO8RFATZV/view?usp=sharing)
-
-- [Informe Sprint #0](https://drive.google.com/file/d/1XeucH8FHQrv6pQGtV6_WSX83CvV_3pT4/view?usp=sharing)
-
-- [Informe Sprint #1](https://drive.google.com/file/d/1dWqEOdXp7wMpf0fCkcmsLubOtLIeaQcv/view?usp=sharing)
+- [En Progreso ........](https://www.google.com)
 
 - [Actas de Reunión](https://drive.google.com/drive/folders/14AS6iTd8XoHON5XCT-ap390itv7metpa?usp=sharing)
 
