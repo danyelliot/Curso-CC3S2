@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef082d36-d0c6-454f-879d-79ab419fd41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nine-mens-morris/src/main/java/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nine-mens-morris/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nine-mens-morris/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
       <updated>1666315888723</updated>
       <workItem from="1666315890646" duration="133000" />
       <workItem from="1666321215264" duration="130000" />
+      <workItem from="1666321479938" duration="72000" />
     </task>
     <servers />
   </component>
