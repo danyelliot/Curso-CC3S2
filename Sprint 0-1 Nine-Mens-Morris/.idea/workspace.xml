@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a20e786a-c524-427d-86f9-8b28f2c59274" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sprint 0-1 Nine-Mens-Morris.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sprint 0-1 Nine-Mens-Morris.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sprint 0-1 Nine-Mens-Morris.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/jarRepositories.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nine-mens-morris/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nine-mens-morris/nine-mens-morris.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nine-mens-morris/src/main/java/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nine-mens-morris/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +39,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/elliot/Desktop/Curso-CC3S2/Sprint 0-1 Nine-Mens-Morris",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,6 +74,9 @@
       <option name="presentableId" value="Default" />
       <updated>1666322821563</updated>
       <workItem from="1666322824642" duration="60000" />
+      <workItem from="1666327101448" duration="276000" />
+      <workItem from="1666327394546" duration="188000" />
+      <workItem from="1666327627260" duration="335000" />
     </task>
     <servers />
   </component>
