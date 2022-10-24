@@ -17,3 +17,5 @@
 
 - [Actas de Reunión](https://drive.google.com/drive/folders/14AS6iTd8XoHON5XCT-ap390itv7metpa?usp=sharing)
 
+- [Video](https://drive.google.com/file/d/1AXtnC-uVS6ccw5wUJsfI3tUO8uh1Urpx/view?usp=sharing)
+
