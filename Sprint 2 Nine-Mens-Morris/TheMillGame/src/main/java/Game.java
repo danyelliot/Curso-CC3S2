@@ -1,6 +1,6 @@
 public class Game {
 
-    public void getPosition(){
+    public void getPosition(int index){
 
     }
 

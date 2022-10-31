@@ -1,6 +1,6 @@
 public class Phase {
 
-    public void getCurrentPhase(){
+    public void getCurrentGamePhase(Player player){
 
     }
     public void setCurrentGamePhase(String Player){

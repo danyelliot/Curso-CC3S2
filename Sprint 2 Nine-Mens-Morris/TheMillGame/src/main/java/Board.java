@@ -8,15 +8,19 @@ public class Board {
 
     }
 
-    public void madeMill(){
+    public void madeMill(int destIndex,Player player){
 
     }
 
-    public void getMillCombination(){
+    public void getMillCombination(int index){
 
     }
 
     public void getNumberOfRemainingPlayerPiecesOutBoard(String player){
+
+    }
+
+    public void getNumberOfRemainingPlayerPiecesInBoard(Player player){
 
     }
 

@@ -15,7 +15,7 @@ class PhaseTest {
     }
 
     @Test
-    void getCurrentPhase() {
+    void getCurrentGamePhase() {
     }
 
     @Test

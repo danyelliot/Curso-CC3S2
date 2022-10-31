@@ -6,7 +6,7 @@ public class Movement {
     public void setPosition(){
 
     }
-    public void removePiece(){
+    public void removePiece(int index, Player player){
 
     }
 }
