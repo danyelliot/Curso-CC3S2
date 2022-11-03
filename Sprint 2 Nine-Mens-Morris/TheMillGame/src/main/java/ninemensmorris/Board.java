@@ -5,11 +5,12 @@ public class Board {
 
     public int[] boardPosition ;
     public int[][] millCombinations;
-    public String currentTurn ;
+
 
     static public final int numberOfPositionsOnBoard = 24;
     static public final int numberOfMillCombinations = 16;
 
+    private String currentTurn ;
     private int numPlayers = 2 ;
     private int[] numberOfPiecesOfPlayer ;
 
