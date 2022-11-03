@@ -30,6 +30,6 @@ public class Movement {
         // boardPosition = new int[Board.numberOfPositionsOnBoard] cambiar posicion en el juego
     }
     public void removePiece(int index, String player){
-
+        //Aca ira el codigo de remove
     }
 }
