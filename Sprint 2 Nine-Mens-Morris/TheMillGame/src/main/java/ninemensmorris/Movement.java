@@ -10,7 +10,7 @@ public class Movement {
 
 
     public Movement(){
-
+        availablePos = new boolean[Board.numberOfPositionsOnBoard];
         for (int i = 0 ; i < Board.numberOfPositionsOnBoard ; i++ ) { availablePos[i] = true ;}
 
     }

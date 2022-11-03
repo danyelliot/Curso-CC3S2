@@ -2,7 +2,6 @@ package ninemensmorris;
 
 public class Board {
 
-
     public int[] boardPosition ;
     public int[][] millCombinations;
     public int[][] boardPositionValues;
@@ -15,9 +14,9 @@ public class Board {
     private int[] numberOfPiecesOfPlayer ;
 
 
-    public void Board(){
+    public Board(){
         boardPosition = new int[Board.numberOfPositionsOnBoard];
-
+        numberOfPiecesOfPlayer = new int[numPlayers];
         for(int i = 0 ; i < numPlayers ; i++ ) { numberOfPiecesOfPlayer[i] = 0 ; }
 
         initBoard();
@@ -83,7 +82,7 @@ public class Board {
                 {0, 0, 0, -1, 0, 0, 0},
                 {-1, -1, 0, 0, 0, -1, -1},
                 {-1, 0, -1, 0, -1, 0, -1},
-                {0, -1, -1, 0, -1, -1, 0},
+                {0, -1, -1, 0, -1, -1, 0}
         };
     }
     public void initMillCombinations(){
