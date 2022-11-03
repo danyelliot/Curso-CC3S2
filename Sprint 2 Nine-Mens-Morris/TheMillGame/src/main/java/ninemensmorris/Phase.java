@@ -1,6 +1,6 @@
 package ninemensmorris;
 
-public class Phase {
+public class Phase extends Board {
     protected int gamePhase ;
 
     public int getCurrentGamePhase(){

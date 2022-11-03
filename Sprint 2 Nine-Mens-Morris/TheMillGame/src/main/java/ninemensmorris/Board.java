@@ -10,7 +10,7 @@ public class Board {
     static public final int numberOfPositionsOnBoard = 24;
     static public final int numberOfMillCombinations = 16;
 
-    private String currentTurn ;
+    public String currentTurn ;
     private int numPlayers = 2 ;
     private int[] numberOfPiecesOfPlayer ;
 
@@ -39,7 +39,7 @@ public class Board {
     }
 
     public String getCurrentTurn(){
-        return currentTurn;
+        return this.currentTurn;
     }
 
     public void setCurrentTurn(String currentTurn){

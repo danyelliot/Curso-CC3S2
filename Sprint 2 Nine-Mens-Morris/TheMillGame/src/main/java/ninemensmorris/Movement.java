@@ -7,6 +7,14 @@ public class Movement {
 
     private boolean isFree = true ;
 
+
+
+    public Movement(){
+
+        for (int i = 0 ; i < Board.numberOfPositionsOnBoard ; i++ ) { availablePos[i] = true ;}
+
+    }
+
     /*
     Agregar throwGameException
     */
