@@ -13,4 +13,13 @@ public class Invoice {
         double ratio = 0.1;
         return value * ratio;
     }
+    public String Country(){
+        return this.country;
+    }
+    public double Value(){
+        return this.value;
+    }
+    public CustomerType customerType(){
+        return this.customerType;
+    }
 }

@@ -17,4 +17,12 @@ public class InvoiceBuilder {
     public Invoice build() {
         return new Invoice(value, country, customerType);
     }
+    public Invoice anyCompany() {
+        return new Invoice(value, country, CustomerType.COMPANY);
+    }
+    public Invoice fromTheUS() {
+        return new Invoice(value,"US", customerType);
+    }
+
+
 }
