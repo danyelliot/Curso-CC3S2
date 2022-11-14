@@ -295,7 +295,7 @@ public class PremiumFlight extends Flight {
 
 ### Respuesta
 
-La prueba completa se encuentra en [Airport Test](https://www.google.com "Test Fase 5")
+La prueba completa se encuentra en [Airport Test](https://github.com/danyelliot/Curso-CC3S2/blob/main/ExamenParcial/Pregunta2/ArchivosPregunta2/Fase5/Pruebas/AirportTest.java "AirportTest Fase 5")
 
 ```
 @DisplayName("Entonces no puedes agregarlo a un vuelo Premium mas de una vez.")
