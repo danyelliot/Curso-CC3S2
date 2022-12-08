@@ -4,9 +4,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class BoardTest {
@@ -68,5 +65,45 @@ class BoardTest {
 
     @Test
     void initMillCombinations() {
+    }
+
+    @Test
+    void testGetPosition() {
+    }
+
+    @Test
+    void testGetCurrentTurn() {
+    }
+
+    @Test
+    void testSetCurrentTurn() {
+    }
+
+    @Test
+    void testMadeMill() {
+    }
+
+    @Test
+    void testGetMillCombination() {
+    }
+
+    @Test
+    void increaseNumberOfTotalPiecesPlaced() {
+    }
+
+    @Test
+    void increaseNumberOfPiecesOfPlayer() {
+    }
+
+    @Test
+    void decreaseNumPiecesOfPlayer() {
+    }
+
+    @Test
+    void testGetNumberOfRemainingPlayerPiecesInBoard() {
+    }
+
+    @Test
+    void testGetPlayerInBoardPosition() {
     }
 }
