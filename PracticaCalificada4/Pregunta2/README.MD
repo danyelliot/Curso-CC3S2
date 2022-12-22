@@ -34,7 +34,7 @@ Se podria implementar en las siguientes áreas :
 
 > Aplicaciones distribuidas
 
-> Sistemas basados en microservicios
+
 
 
 
