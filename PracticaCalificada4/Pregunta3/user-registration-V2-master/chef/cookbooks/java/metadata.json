@@ -1,0 +1,36 @@
+{
+  "providing": {
+  },
+  "maintainer": "Eberhard Wolff, based on Opscode, Inc.",
+  "replacing": {
+  },
+  "description": "Installs java via openjdk.",
+  "maintainer_email": "eberhard.wolff@gmail.com.com",
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+    "apt": [
+
+    ]
+  },
+  "suggestions": {
+  },
+  "long_description": "Installs Java. Uses OpenJDK. Author:: Seth Chisamore (<schisamo@opscode.com>) Copyright:: 2008-2010, Opscode, Inc Licensed under the Apache License, Version 2.0 (the \"License\");",
+  "platforms": {
+    "ubuntu": [
+
+    ]
+  },
+  "name": "java",
+  "version": "0.10.2",
+  "conflicting": {
+  },
+  "license": "Apache 2.0",
+  "recipes": {
+    "java": "Installs openjdk to provide Java"
+  }
+}

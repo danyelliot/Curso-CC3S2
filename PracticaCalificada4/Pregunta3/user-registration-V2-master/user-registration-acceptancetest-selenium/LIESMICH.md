@@ -1,0 +1,16 @@
+Selenium Akzeptanztests
+================
+
+Dieses Projekt enthält Akzeptanztests mit Selenium. Der Source-Code
+für die Tests findet sich im Verzeichnis `src/test/java` .
+
+Zum Ausführen:
+
+- Führe `./mvnw -pl user-registration-application -am install` im
+  Verzeichnis `user-registration-V2` aus.
+- Führe `./mvnw test` (macOS, Linux) oder `./mvnw.cmd test` (Windows) in diesem Verzeichnis aus
+
+
+Das Verzeichnis `Selenium-IDE-V3` enthält Tests für die aktuelle Version
+der [Selenium IDE](https://www.seleniumhq.org/projects/ide/). Das
+Verzeichnis `Selenium` enthält Tests für die alte Version der Selenium IDE.

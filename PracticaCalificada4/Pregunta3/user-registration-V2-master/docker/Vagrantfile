@@ -1,0 +1,15 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.synced_folder "log", "/log", create: true
+  config.vm.network "forwarded_port", guest: 8080, host: 8090
+
+  config.vm.provision "docker" do |d|
+    d.build_image "--tag=java /vagrant/java"
+    d.build_image "--tag=user-registration /vagrant/user-registration"
+  end    
+  config.vm.provision "docker", run: "always" do |d|    
+    d.run "user-registration",
+      args: "-p 8080:8080 -v /log:/log"
+  end
+
+end
