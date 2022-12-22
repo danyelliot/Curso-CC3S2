@@ -1,0 +1,7 @@
+name             "webapp"
+maintainer       "Eberhard Wolff"
+maintainer_email "eberhard.wolff@gmail.com"
+license          "Apache 2.0 License"
+description      "Installs/Configures a webapp based on Tomcat"
+version          "0.0.1"
+depends          "tomcat"

@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>user-registration-capacitytest-gatling</artifactId>
+
+	<properties>
+	  <gatling.version>3.0.1.1</gatling.version>
+	  <maven.compiler.source>1.8</maven.compiler.source>
+	  <maven.compiler.target>1.8</maven.compiler.target>
+	  <gatling-plugin.version>3.0.1</gatling-plugin.version>
+	</properties>
+
+	<parent>
+		<groupId>com.ewolff</groupId>
+		<artifactId>user-registration</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>io.gatling.highcharts</groupId>
+			<artifactId>gatling-charts-highcharts</artifactId>
+			<version>${gatling.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ewolff</groupId>
+			<artifactId>user-registration-application</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<classifier>classes</classifier>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.gatling</groupId>
+				<artifactId>gatling-maven-plugin</artifactId>
+				<version>${gatling-plugin.version}</version>
+				<executions>
+                                  <execution>
+                                    <phase>test</phase>
+                                    <goals>
+                                      <goal>test</goal>
+                                    </goals>
+                                  </execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,21 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.network "forwarded_port", guest: 8082, host: 8082
+  config.vm.network "forwarded_port", guest: 8083, host: 8083
+  config.vm.network "forwarded_port", guest: 2003, host: 2003
+
+  config.vm.provision "docker" do |d|
+    d.build_image "--tag=user-registration /vagrant/user-registration"
+    d.build_image "--tag=carbon /vagrant/carbon"
+    d.build_image "--tag=graphite-web /vagrant/graphite-web"
+  end
+  config.vm.provision "docker", run: "always" do |d|
+    d.run "carbon",
+      args: "-p 2003:2003"
+    d.run "graphite-web",
+      args: "-p 8082:80  --volumes-from carbon"
+    d.run "user-registration",
+      args: "-p 8083:8080 --link carbon:carbon"
+  end
+
+end
