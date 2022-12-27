@@ -99,4 +99,16 @@ Ejecución mediante
 
 <img src="./img/c14.png" height="500">
 
+## Jenkinsfile
 
+<img src="./img/jenkinsfile.png" height="500">
+
+## Ejecutar el pipeline desde el Jenkinsfile
+
+### Configuración
+
+<img src="./img/csemi.png" height="500">
+
+### Ejecución
+
+<img src="./img/cfinal.png" height="500">
