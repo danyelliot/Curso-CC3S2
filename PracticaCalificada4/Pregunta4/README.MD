@@ -1,2 +1,0 @@
-Pregunta 4
-
