@@ -23,3 +23,27 @@ https://i.imgur.com/zOZOsgJ.png
 
 
 
+## Creación de una etapa checkout
+
+### Pipeline
+
+<img src="./img/c1.png" height="500">
+
+### Ejecución
+
+<img src="./img/c2.png" height="500">
+
+
+## Creación de un proyecto Java Spring Boot
+
+### Configuración
+
+<img src="./img/c3.png" height="500">
+
+
+
+## Ejecución del proyecto
+
+<img src="./img/c4a.png" height="500">
+
+<img src="./img/c4.png" height="500">
