@@ -64,3 +64,39 @@ Se modificó la linea 29
 <img src="./img/c7.png" height="500">
 
 <img src="./img/c8.png" height="500">
+
+## Ejecución de la construcción en jenkins
+
+Agregando la siguiente etapa al pipeline :
+
+```
+stage("Compile") {
+    steps {
+        sh "./gradlew compileJava"
+    }
+}
+```
+
+<img src="./img/c9.png" height="500">
+
+
+## Escribiendo una prueba unitaria
+
+<img src="./img/c10.png" height="500">
+
+Ejecución mediante 
+```
+./gradlew test
+```
+
+<img src="./img/c11.png" height="500">
+
+## Creación de una etapa de prueba unitaria
+
+<img src="./img/c12.png" height="500">
+
+<img src="./img/c13.png" height="500">
+
+<img src="./img/c14.png" height="500">
+
+
