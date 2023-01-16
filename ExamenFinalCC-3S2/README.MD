@@ -374,6 +374,65 @@ Al momento de ejecutar el pipeline se observa que se ejecutan las pruebas unitar
 - Exponga la aplicación con el servicio NodePort.
 - Realiza una solicitud (usando curl ) a la aplicación.
 
+Se crea el archivo de configuración de Kubernetes en formato YAML para la aplicación "Hola Amigos".
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hola-amigos-cc3s2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hola-amigos-cc3s2
+  template:
+    metadata:
+      labels:
+        app: hola-amigos-cc3s2
+    spec:
+      containers:
+      - name: hola-amigos-cc3s2
+        image: <your-image-name>
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hola-amigos-cc3s2
+spec:
+  selector:
+    app: hola-amigos-cc3s2
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 8080
+  type: ClusterIP
+
+```
+
+> Se crea el recurso en el clúster de Kubernetes
+
+```
+kubectl create -f hola-amigos-cc3s2.yaml
+
+```
+
+> Se verifica que el recurso se haya creado correctamente
+
+```
+kubectl get all
+
+```
+
+
+
+
 
 ## 8.(1 punto) Implementa una nueva función, Nos vemos!, e implementa mediante una actualización continua 1:
 - Esta característica se puede agregar como un nuevo punto final, /bye , que siempre
