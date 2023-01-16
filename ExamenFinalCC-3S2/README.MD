@@ -413,22 +413,30 @@ spec:
     port: 8080
     targetPort: 8080
   type: ClusterIP
-
 ```
 
 > Se crea el recurso en el clúster de Kubernetes
 
 ```
 kubectl create -f hola-amigos-cc3s2.yaml
-
 ```
 
 > Se verifica que el recurso se haya creado correctamente
 
 ```
 kubectl get all
+```
+
+<p align="center">
+<img src="./img/c11.png" >
+</p>
+
+> Accediendo a la aplicación
 
 ```
+kubectl expose deployment hola-amigos-cc3s2 --type=LoadBalancer --port=8080
+```
+
 
 
 
