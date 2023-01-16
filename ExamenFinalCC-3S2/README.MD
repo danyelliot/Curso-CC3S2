@@ -356,11 +356,25 @@ haga commit en el repositorio.
 - Intenta hacer commit el código que rompe la construcción del pipeline y observa cómo
 se visualiza en Jenkins.
 
+Se utilizo un Jenkinsfile para la creación del pipeline de integración continua para el proyecto de calculadora de Python, el cual se encuentra en [Jenkinsfile](https://github.com/danyelliot/CalculadorFinal)
+
+
+Al momento de ejecutar el pipeline no habia un agente Python instalado en el servidor de Jenkins, por lo que se creo una imagen de docker con python3 preinstalado para la ejecución del pipeline de integración continua. [Dockerfile](https://github.com/danyelliot/CalculadorFinal)
+
+<p align="center">
+<img src="./img/c10.png" height="200">
+</p>
+
+Al momento de ejecutar el pipeline se observa que se ejecutan las pruebas unitarias y se ejecuta el programa de python.
+
+
 ## 7.(0.5 puntos) Ejecuta una aplicación Hola Amigos CC-3S2 en el clúster de Kubernetes:
 - La aplicación Hola Amigos CC-3S2 puede verse exactamente igualmente al ejercicio 2
 - Implementa la aplicación con tres réplicas.
 - Exponga la aplicación con el servicio NodePort.
 - Realiza una solicitud (usando curl ) a la aplicación.
+
+
 ## 8.(1 punto) Implementa una nueva función, Nos vemos!, e implementa mediante una actualización continua 1:
 - Esta característica se puede agregar como un nuevo punto final, /bye , que siempre
 devuelve Nos vemos!.
