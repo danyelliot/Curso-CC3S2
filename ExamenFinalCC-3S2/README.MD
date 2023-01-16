@@ -186,6 +186,56 @@ de Docker.
 agente), que instala el intérprete de Ruby.
 - Crea la imagen del agente.
 - Cambia la configuración en la instancia de Jenkins para usar la imagen del agente.
+
+
+> Creamos el archivo Dockerfile el cual contiene las siguientes instrucciones:
+
+```
+FROM jenkins/jenkins:lts
+FROM ruby:2.7
+
+USER root
+
+RUN apt-get update && \
+    apt-get install -y docker.io
+
+RUN usermod -a -G docker jenkins
+
+USER jenkins
+
+RUN /usr/local/bin/install-plugins.sh docker-plugin
+
+RUN gem install bundler
+RUN gem install rake
+RUN gem install rspec
+```
+
+> Este Dockerfile utiliza la imagen oficial de Jenkins LTS como base. Luego, utiliza la instrucción `RUN` para actualizar el sistema operativo y instalar Docker, y luego agrega el usuario jenkins al grupo de docker para permitirle ejecutar comandos de docker. Finalmente, utiliza el comando RUN /usr/local/bin/install-plugins.sh para instalar el complemento de Docker en Jenkins.
+
+
+
+
+> Ahora construimos la imagen del master de Jenkins
+
+```
+docker build -t jenkins-ruby-docker .
+```
+
+
+> Luego ejecutamos el contenedor
+
+```
+docker run -p 8080:8080 -p 50000:50000 jenkins-docker
+```
+
+<p align="center">
+<img src="./img/c8.png" >
+</p>
+
+
+
+
+
 ## 4.(1 punto) Crea un pipeline que ejecuta un script de Ruby que imprima Hola Mundo desde Ruby:
 - Crea un nuevo pipeline.
 - Utiliza el siguiente comando de shell para crear el script hola.rb sobre la marcha:
@@ -196,6 +246,9 @@ sh "echo \"puts 'Hola Mundo en Ruby'\" > hola.rb"
 
 - Agregue el comando para ejecutar hola.rb , utilizando el intérprete de Ruby.5.
 - Ejecuta la construcción y observa la salida de la consola.
+
+
+
 ## 5.(1 punto) Crea un programa de Python que multiplique, sume, reste, divida dos números pasados como parámetros de línea de comandos. Agrega pruebas unitarias y publica el proyecto en GitHub:
 - Crea dos archivos:calculador.py y test_calculador.py.
 - Puedes usar la biblioteca unittest en https://docs.python.org/3/library/unittest.html.
