@@ -251,7 +251,86 @@ sh "echo \"puts 'Hola Mundo en Ruby'\" > hola.rb"
 - Puedes usar la biblioteca unittest en https://docs.python.org/3/library/unittest.html.
 - Ejecuta el programa y la prueba unitaria.
 
-> La carpeta de calculador.py y test_calculador.py se encuentra en 
+> La carpeta de calculador.py y test_calculador.py se encuentra en [Calculador](https://github.com/danyelliot/Curso-CC3S2/tree/main/ExamenFinalCC-3S2/Calculador)
+
+> El archivo calculador.py contiene el siguiente código:
+
+```
+import sys
+
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    return a / b
+
+if __name__ == '__main__':
+    if len(sys.argv) != 4:
+        print("Uso: calculador.py <operación> <número1> <número2>")
+        sys.exit(1)
+
+    operacion = sys.argv[1]
+    a = float(sys.argv[2])
+    b = float(sys.argv[3])
+
+    if operacion == 'sumar':
+        resultado = sumar(a, b)
+    elif operacion == 'restar':
+        resultado = restar(a, b)
+    elif operacion == 'multiplicar':
+        resultado = multiplicar(a, b)
+    elif operacion == 'dividir':
+        resultado = dividir(a, b)
+    else:
+        print("Operación no válida")
+        sys.exit(1)
+
+    print("Resultado:", resultado)
+
+```
+
+> El archivo test_calculador.py contiene el siguiente código:
+
+```
+import unittest
+from calculador import sumar, restar, multiplicar, dividir
+
+class TestCalculador(unittest.TestCase):
+    def test_sumar(self):
+        resultado = sumar(10, 5)
+        self.assertEqual(resultado, 15)
+
+    def test_restar(self):
+        resultado = restar(10, 5)
+        self.assertEqual(resultado, 5)
+
+    def test_multiplicar(self):
+        resultado = multiplicar(10, 5)
+        self.assertEqual(resultado, 50)
+
+    def test_dividir(self):
+        resultado = dividir(10, 5)
+        self.assertEqual(resultado, 2)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+> Para ejecutar el programa de python se debe ejecutar el siguiente comando:
+
+```    
+python calculador.py <operación> <número1> <número2>
+```
+
+
+
 
 ## 6.(1 punto) Crea el pipeline de integración continua para el proyecto de calculadora de Python:
 - Usa Jenkinsfile para especificar el pipeline.
