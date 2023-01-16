@@ -210,10 +210,7 @@ RUN gem install rake
 RUN gem install rspec
 ```
 
-> Este Dockerfile utiliza la imagen oficial de Jenkins LTS como base. Luego, utiliza la instrucción `RUN` para actualizar el sistema operativo y instalar Docker, y luego agrega el usuario jenkins al grupo de docker para permitirle ejecutar comandos de docker. Finalmente, utiliza el comando RUN /usr/local/bin/install-plugins.sh para instalar el complemento de Docker en Jenkins.
-
-
-
+> Este Dockerfile utiliza la imagen oficial de Jenkins LTS como base. Luego, utiliza la instrucción `RUN` para actualizar el sistema operativo y instalar Docker, y luego agrega el usuario jenkins al grupo de docker para permitirle ejecutar comandos de docker. Finalmente, utiliza el comando `RUN` `/usr/local/bin/install-plugins.sh` para instalar el complemento de Docker en Jenkins. Luego, utiliza la instrucción `RUN` para instalar bundler, rake y rspec en el contenedor.
 
 > Ahora construimos la imagen del master de Jenkins
 
@@ -253,6 +250,9 @@ sh "echo \"puts 'Hola Mundo en Ruby'\" > hola.rb"
 - Crea dos archivos:calculador.py y test_calculador.py.
 - Puedes usar la biblioteca unittest en https://docs.python.org/3/library/unittest.html.
 - Ejecuta el programa y la prueba unitaria.
+
+> La carpeta de calculador.py y test_calculador.py se encuentra en 
+
 ## 6.(1 punto) Crea el pipeline de integración continua para el proyecto de calculadora de Python:
 - Usa Jenkinsfile para especificar el pipeline.
 - Configura el trigger para que el pipeline se ejecute automáticamente en caso de que se
