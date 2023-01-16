@@ -326,9 +326,24 @@ if __name__ == '__main__':
 > Para ejecutar el programa de python se debe ejecutar el siguiente comando:
 
 ```    
-python calculador.py <operación> <número1> <número2>
+python3 calculador.py <operación> <número1> <número2>
 ```
 
+> Como por ejemplo:
+
+```
+python3 calculador.py sumar 10 5
+```
+
+> Para ejecutar las pruebas unitarias se debe ejecutar el siguiente comando:
+
+```
+python3 test_calculador.py
+```
+
+<p align="center">
+<img src="./img/c9.png" >
+</p>
 
 
 
