@@ -5,8 +5,10 @@ A las instancias de microservicios normalmente se les asignan direcciones IP din
 se inician, por ejemplo, cuando se ejecutan en contenedores. Esto dificulta que un cliente realice
 una solicitud a un microservicio que, por ejemplo, expone una API REST a través de HTTP.
 Considera el siguiente diagrama:
- 
+
+<p align="center">
 <img src="./img/c1.png" height=300>
+</p>
 
 Los clientes pueden encontrar los microservicios y las instancias de las siguientes maneras :
 
@@ -57,7 +59,9 @@ Se debe agregar un componente nuevo y un servidor de configuración para almacen
 
 - Si los usuarios finales comienzan a informar problemas,¿cómo puedo encontrar mensajes logs relacionados? es decir,¿cómo puedo identificar qué instancia de microservicio es la causa raíz del problema? El siguiente diagrama ilustra el problema:
 
+<p align="center">
 <img src="./img/c2.png" height = 250>
+</p>
 
 > Se pueden encontrar los mensajes logs relacionados mediante un API y herramientas de búsqueda para consultar los registros de todas las instancias de microservicio.
 
@@ -74,7 +78,9 @@ Se debe agregar un componente nuevo y un servidor de configuración para almacen
 
 El siguiente diagrama representa esto:
 
+<p align="center">
 <img src="./img/c3.png" height = 200>
+</p>
 
 > Para identificar el microservicio que está causando la demora, se debe agregar un identificador de correlación único a cada mensaje y registrar el tiempo de respuesta de cada microservicio. Esto permite identificar el microservicio que está causando la demora.
 
@@ -88,11 +94,15 @@ El siguiente diagrama representa esto:
 
 > Puerto 5984
 
+<p align="center">
 <img src="./img/c4.png" >
+</p>
 
 > Acceso mediante http://localhost:5984/_utils/
 
+<p align="center">
 <img src="./img/c5.png" >
+</p>
 
 ## 2.(1 punto) Crea una imagen de Docker con un servicio REST, respondiendo Hola Amigos CC-3S2 a localhost:8080/hola. Utiliza el lenguaje y el framework que prefieras. Estos son los pasos que debe seguir:
 - Crea una aplicación de servicio web.
@@ -100,6 +110,70 @@ El siguiente diagrama representa esto:
 - Construye la imagen.
 - Ejecuta el contenedor que publica el puerto.
 - Verifica que se esté ejecutando correctamente utilizando el navegador (o curl).
+
+> Creamos el Dockerfile el cual contiene las siguientes instrucciones:
+
+```
+# Utilizamos una imagen base de Node.js
+FROM node:12-alpine
+
+# Establecemos el directorio de trabajo en /app
+WORKDIR /app
+
+# Copiamos los archivos necesarios para la aplicación
+COPY package*.json ./
+
+# Instalamos las dependencias
+RUN npm install
+
+# Copiamos el resto de los archivos de la aplicación
+COPY . .
+
+# Exponemos el puerto 8080
+EXPOSE 8080
+
+# Iniciamos la aplicación
+CMD ["npm", "start"]
+
+```
+
+Luego creamos el archivo index.js el cual contiene el siguiente código:
+
+```
+const express = require('express')
+const app = express()
+const port = 8080
+
+app.get('/hola', (req, res) => {
+  res.send('Hola Amigos CC-3S2')
+})
+
+app.listen(port, () => {
+  console.log(`Servicio REST escuchando en el puerto ${port}`)
+})
+```
+Una vez creado el Dockerfile y el código, se puede construir la imagen ejecutando el siguiente comando en la línea de comandos:
+
+```
+docker build -t my-rest-service .
+```
+
+Una vez construida la imagen, se puede ejecutar el contenedor con el siguiente comando:
+
+```
+docker run -p 8080:8080 my-rest-service
+```
+
+<p align="center">
+<img src="./img/c6.png" >
+</p>
+
+> Acceso mediante http://localhost:8080/hola
+
+<p align="center">
+<img src="./img/c7.png" >
+</p>
+
 
 La forma más fácil de crear un servicio REST es usar Python con Flask(https://flask.palletsprojects.com/). Ten en cuenta que muchos frameworks web, de forma predeterminada, inician una aplicación solo en la interfaz localhost. Para publicar un puerto, es necesario iniciarlo en todas las interfaces ( app.run(host='0.0.0.0') en el caso de Flask).
 
@@ -115,9 +189,11 @@ agente), que instala el intérprete de Ruby.
 ## 4.(1 punto) Crea un pipeline que ejecuta un script de Ruby que imprima Hola Mundo desde Ruby:
 - Crea un nuevo pipeline.
 - Utiliza el siguiente comando de shell para crear el script hola.rb sobre la marcha:
-'''
+
+```
 sh "echo \"puts 'Hola Mundo en Ruby'\" > hola.rb"
-'''
+```
+
 - Agregue el comando para ejecutar hola.rb , utilizando el intérprete de Ruby.5.
 - Ejecuta la construcción y observa la salida de la consola.
 ## 5.(1 punto) Crea un programa de Python que multiplique, sume, reste, divida dos números pasados como parámetros de línea de comandos. Agrega pruebas unitarias y publica el proyecto en GitHub:
