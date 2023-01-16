@@ -174,8 +174,8 @@ docker run -p 8080:8080 my-rest-service
 <img src="./img/c7.png" >
 </p>
 
+> Ahora respondera "Hola Amigos CC-3S2" cuando se acceda a la ruta localhost:8080/hola
 
-La forma más fácil de crear un servicio REST es usar Python con Flask(https://flask.palletsprojects.com/). Ten en cuenta que muchos frameworks web, de forma predeterminada, inician una aplicación solo en la interfaz localhost. Para publicar un puerto, es necesario iniciarlo en todas las interfaces ( app.run(host='0.0.0.0') en el caso de Flask).
 
 
 ## 3.(1 punto) Crea un master de Jenkins y imágenes de agentes Docker y úsalos para ejecutar una infraestructura de Jenkins capaz de crear proyectos de Ruby:
